@@ -26,7 +26,7 @@ const MessagesContainer = (props) => {
       setChatIsLoading(false);
     };
     fetchChat();
-  }, [currentChat._id]);
+  }, [currentChat._id, currentUser._id]);
 
   const handleSendMessage = async (msg) => {
     const msgs = [...messages];

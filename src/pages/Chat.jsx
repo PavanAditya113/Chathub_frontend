@@ -66,7 +66,7 @@ const Chat = () => {
         navigate("/setAvatar");
       }
     }
-  }, []);
+  }, [dispatch, navigate, user]);
 
   const handleChatChange = (chat) => {
     setCurrentChat(chat);
